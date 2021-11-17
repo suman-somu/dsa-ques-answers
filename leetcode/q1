@@ -38,11 +38,26 @@ Constraints:
 
 Answer
 
-class Solution {
-    public boolean isPowerOfTwo(int n) {
-                return (Math.log10(n) / Math.log10(2)) % 1 == 0;  
 
+//using bitwise operator
+
+public boolean isPowerOfTwo(int n) {
+
+	//1st approach
+	if(n<=0) return false;
+    if( (n&(n-1)) == 0) return true;
+    else         return false;
+	
+	//2nd approach
+    if(n<0) return false;
+    
+    int count=0;
+    while(n!=0){
+        n=n&(n-1);
+        count++;
     }
+    if(count==1) return true;
+    else         return false;
 }
 
 
