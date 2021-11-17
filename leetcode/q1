@@ -77,7 +77,7 @@ class Solution {
 
 or
 
-
+```java
 class Solution {
 public boolean isPowerOfTwo(int n) {
 
@@ -92,3 +92,4 @@ public boolean isPowerOfTwo(int n) {
    
 }
 }
+```
